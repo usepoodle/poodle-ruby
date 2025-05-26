@@ -1,6 +1,6 @@
 # Poodle Ruby SDK
 
-[![Gem Version](https://badge.fury.io/rb/poodle-ruby.svg)](https://badge.fury.io/rb/poodle-ruby)
+[![Gem Version](https://badge.fury.io/rb/poodle-ruby.svg)](https://rubygems.org/gems/poodle-ruby)
 [![Build Status](https://github.com/usepoodle/poodle-ruby/workflows/CI/badge.svg)](https://github.com/usepoodle/poodle-ruby/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
