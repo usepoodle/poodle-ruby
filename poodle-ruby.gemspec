@@ -19,6 +19,7 @@ Gem::Specification.new do |spec|
   spec.metadata["source_code_uri"] = "https://github.com/usepoodle/poodle-ruby"
   spec.metadata["documentation_uri"] = "https://rubydoc.info/gems/poodle-ruby"
   spec.metadata["bug_tracker_uri"] = "https://github.com/usepoodle/poodle-ruby/issues"
+  spec.metadata["rubygems_mfa_required"] = "true"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
@@ -39,5 +40,4 @@ Gem::Specification.new do |spec|
 
   # For more information and examples about making a new gem, check out our
   # guide at: https://bundler.io/guides/creating_gem.html
-  spec.metadata["rubygems_mfa_required"] = "true"
 end
