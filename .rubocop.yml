@@ -1,0 +1,65 @@
+AllCops:
+  SuggestExtensions: false
+  TargetRubyVersion: 3.0
+  NewCops: enable
+  Exclude:
+    - "vendor/**/*"
+    - "bin/**/*"
+    - "spec/fixtures/**/*"
+
+# Style preferences
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: double_quotes
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: true
+
+# Layout preferences
+Layout/LineLength:
+  Max: 120
+  Exclude:
+    - "spec/**/*"
+
+# Metrics
+Metrics/BlockLength:
+  Exclude:
+    - "spec/**/*"
+    - "poodle-ruby.gemspec"
+    - "lib/poodle/rails/tasks.rake"
+    - "examples/**/*"
+
+Metrics/MethodLength:
+  Max: 20
+  Exclude:
+    - "spec/**/*"
+    - "examples/**/*"
+
+Metrics/ClassLength:
+  Max: 170
+
+# Naming
+Naming/FileName:
+  Exclude:
+    - "lib/poodle-ruby.rb"
+
+# Security
+Security/YAMLLoad:
+  Enabled: true
+
+Metrics/AbcSize:
+  Max: 20
+  Exclude:
+    - "examples/**/*"
+
+Metrics/CyclomaticComplexity:
+  Max: 8
+  Exclude:
+    - "examples/**/*"
+
+Metrics/PerceivedComplexity:
+  Exclude:
+    - "examples/**/*"
