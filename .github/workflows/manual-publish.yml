@@ -1,0 +1,47 @@
+name: Manual Publish
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version to publish (e.g., v1.2.3)"
+        required: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    name: Publish to RubyGems
+    permissions:
+      contents: write # Required for creating GitHub Release
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Checkout the specific version/tag provided in the input
+          ref: ${{ github.event.inputs.version }}
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3" # Using a specific recent Ruby version
+          bundler-cache: true
+
+      - name: Build gem
+        run: gem build *.gemspec
+
+      - name: Publish to RubyGems
+        run: |
+          mkdir -p ~/.gem
+          echo ":rubygems_api_key: ${{ secrets.RUBYGEMS_API_KEY }}" > ~/.gem/credentials
+          chmod 0600 ~/.gem/credentials
+          gem push *.gem
+
+      - name: Create GitHub Release
+        # Create a release only if the input version starts with 'v' (indicating a tag)
+        if: startsWith(github.event.inputs.version, 'v')
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.event.inputs.version }}
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
