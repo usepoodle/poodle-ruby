@@ -1,7 +1,7 @@
 # Poodle Ruby SDK
 
 [![Gem Version](https://badge.fury.io/rb/poodle-ruby.svg)](https://badge.fury.io/rb/poodle-ruby)
-[![Ruby](https://github.com/usepoodle/poodle-ruby/workflows/Ruby/badge.svg)](https://github.com/usepoodle/poodle-ruby/actions)
+[![Build Status](https://github.com/usepoodle/poodle-ruby/workflows/CI/badge.svg)](https://github.com/usepoodle/poodle-ruby/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 Ruby SDK for the Poodle's email sending API.
