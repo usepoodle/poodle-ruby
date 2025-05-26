@@ -30,13 +30,6 @@ jobs:
       - name: Run tests
         run: bundle exec rspec
 
-      - name: Upload coverage to Codecov
-        if: matrix.ruby-version == '3.3'
-        uses: codecov/codecov-action@v4
-        with:
-          file: ./coverage/coverage.xml
-          fail_ci_if_error: true
-
   security:
     runs-on: ubuntu-latest
     steps:
