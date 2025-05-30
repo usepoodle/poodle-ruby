@@ -2,7 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/poodle-ruby.svg)](https://rubygems.org/gems/poodle-ruby)
 [![Build Status](https://github.com/usepoodle/poodle-ruby/workflows/CI/badge.svg)](https://github.com/usepoodle/poodle-ruby/actions)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/usepoodle/poodle-ruby/blob/main/LICENSE)
 
 Ruby SDK for the Poodle's email sending API.
 
@@ -435,7 +435,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md) for details on the process for submitting pull requests and our [Code of Conduct](CODE_OF_CONDUCT.md).
+Contributions are welcome! Please read our [Contributing Guide](https://github.com/usepoodle/poodle-ruby/blob/main/CONTRIBUTING.md) for details on the process for submitting pull requests and our [Code of Conduct](https://github.com/usepoodle/poodle-ruby/blob/main/CODE_OF_CONDUCT.md).
 
 ## License
 
